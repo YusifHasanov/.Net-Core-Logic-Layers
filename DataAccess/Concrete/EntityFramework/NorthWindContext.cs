@@ -14,7 +14,7 @@ namespace DataAccess.Concrete.EntityFramework
         {
             optionsBuilder.UseSqlServer(@"Server=WINDOWS-TC4OKAI\SQLEXPRESS;Database=Northwind;Trusted_Connection=true;TrustServerCertificate=True");
         }
-        DbSet<Product> Products { get; set; }
+        DbSet<Product> Products { get; set;  }
         DbSet<Category> Categories { get; set; }
         
     }
