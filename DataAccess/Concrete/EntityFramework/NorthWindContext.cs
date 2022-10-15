@@ -1,4 +1,5 @@
 ﻿using Entities.Concrete;
+
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -14,8 +15,10 @@ namespace DataAccess.Concrete.EntityFramework
         {
             optionsBuilder.UseSqlServer(@"Server=WINDOWS-TC4OKAI\SQLEXPRESS;Database=Northwind;Trusted_Connection=true;TrustServerCertificate=True");
         }
-        DbSet<Product> Products { get; set;  }
-        DbSet<Category> Categories { get; set; }
-        
+        public DbSet<Product> Products { get; set;  }
+        public DbSet<Category> Categories { get; set; }
+
+
+
     }
 }
